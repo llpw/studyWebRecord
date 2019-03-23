@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>第七到第八天，布局</title>
+        <link rel="stylesheet" href="css/style_1.css" id="selectCss">
+    </head>
+    <body>
+        <!-- 实现一个两栏布局，左侧占30%宽度，右侧占70%宽度 --浮动
+        实现一个两栏布局，左侧固定宽度，右侧根据浏览器宽度进行自适应变化
+        实现一个两栏布局，右侧固定宽度，左侧根据浏览器宽度进行自适应变化
+        实现一个三栏布局，左侧固定宽度，右侧固定宽度，中间部分宽度随浏览器宽度变化而自适应变化
+        实现一个三栏布局，左侧固定宽度，中间固定宽度，右侧根据浏览器宽度变化而自适应变化 -->
+        <header>
+            <ul id="menu">
+                <li><a class="style" data-file="style_1">两栏布局1</a></li>
+                <li><a class="style" data-file="style_2">两栏布局2</a></li>
+                <li><a class="style" data-file="style_3">两栏布局3</a></li>
+                <li><a class="style" data-file="style_4">三栏布局1</a></li>
+                <li><a class="style" data-file="style_5">三栏布局2</a></li>
+            </ul>
+        </header>
+        <main>
+            <div class="content clearfix">
+                <div class="left"></div>
+                <div class="center"></div>
+                <div class="right"></div>
+            </div>
+        </main>
+        <script>
+            var cssLink = document.getElementById('selectCss');
+            var btn = document.querySelectorAll('.style');
+            var length = btn.length;
+            for(let i = 0; i < length; i++){
+               btn[i].onclick = function(){
+                    var fileName = this.dataset.file;
+                    cssLink.href = "css/" + fileName + ".css";
+               }
+            }
+        </script>
+
+    </body>
+</html>

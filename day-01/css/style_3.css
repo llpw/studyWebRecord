@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#menu {
+    height: 3em;
+    margin-bottom: 5px;
+}
+
+#menu li {
+    float: left;
+    height: 100%;
+    width: calc(100% / 5);
+    list-style-type: none;
+    background: #ffc620;
+}
+
+#menu li a {
+    height: 100%;
+    padding: 1em;
+    display: block;
+    color: white;
+    text-align: center;
+}
+
+#menu li a:hover{
+	background: rebeccapurple;
+}
+
+.content {
+    position: relative;
+}
+
+.left {
+    width: calc(100% - 100px);
+    height: 200px;
+    margin-right: 100px;
+    background: aqua;
+}
+.right {
+    width: 100px;
+    height: 200px;
+    background: rgb(157, 221, 94);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+

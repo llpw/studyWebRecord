@@ -1,0 +1,5 @@
+float 与 absolute 脱离文档流的区别
+
+float 其他box会占据float盒子位置，但是内容不会占据，而是环绕在周围。
+
+absolute 完全脱离文档流，完全被其他盒子覆盖。

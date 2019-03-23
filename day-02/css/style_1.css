@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.parent-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    background: #6c5ce7;
+}
+
+footer {
+    width: 100%;
+    background: #636e72;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+}
+main {
+    flex: 1;
+    background: #dfe6e9;
+}
+aside, nav {
+    flex: 0 0 12em;
+    background: #ff7675;
+}
+nav {
+    order: -1;
+    background: #fdcb6e;
+}
+
+@media screen and (max-width: 768px){
+    .container {
+        flex-direction: column;
+        flex: 1;
+    }
+    aside,
+    nav,
+    main {
+        flex: auto;
+    }
+}

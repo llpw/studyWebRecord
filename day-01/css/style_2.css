@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#menu {
+    margin-bottom: 5px;
+    height: 3em;
+}
+
+#menu li {
+    float: left;
+    height: 100%;
+    width: calc(100%/5);
+    list-style-type: none;
+    background: #ffc620;
+} 
+
+#menu li a {
+    display: block;
+    height: 3em;
+    padding: 1em;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+#menu li a:hover {
+    background: rebeccapurple;
+}
+
+.content {
+    position: relative;
+}
+.left {
+    width: 100px;
+    height: 200px;
+    position: absolute;
+    left: 0;
+	background: rgb(157, 221, 94);
+}
+.right {
+    width: calc(100% - 100px);
+    height: 200px;
+    margin-left: 100px;
+    background: aqua;
+}
